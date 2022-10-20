@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login-style.css">
+    <script defer src="login.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="login.html" id="login-form">
+            <div class="form-control">
+              <label>Email</label>
+              <input type="email" id="email" name="email" 
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email@email.com" required>
+            </div>
+            <div class="form-control">
+              <label>Password</label>
+              <input type="password" id="password" name="password" placeholder="password"required>
+            </div>
+            <input type="submit" class="btn" id="login-submit">
+        </form>
+    </div>
+  </body>
+</html>
